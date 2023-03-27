@@ -5,6 +5,7 @@ import torch.optim as optim
 from torch.autograd import Variable
 from torch.utils.data import Dataset, DataLoader
 from torch.nn.parameter import Parameter
+import numpy as np
 
 def local_kernel(u, v):
     dist = torch.norm(u - v, p=2, dim=2)
